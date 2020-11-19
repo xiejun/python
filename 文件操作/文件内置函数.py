@@ -1,0 +1,17 @@
+# open()
+# read()
+# readline()
+# seek()
+# write()
+# close()
+file1 = open('name.txt',mode='w')
+file1.write('123')
+file1.close()
+
+file2 = open('name.txt')
+print(file2.read())
+file2.close()
+
+file3 = open('name.txt',mode='a')
+file3.write('456')
+file3.close()
