@@ -49,7 +49,7 @@ string = '''第一行
 
 
 # 查看字符是否存在于字符串中
- 'a' in string
+'a' in string
 
 # # 切片操作符
 chinese_zodiac = "猴鸡狗猪鼠牛虎兔龙蛇马羊"
