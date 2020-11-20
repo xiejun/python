@@ -8,6 +8,37 @@ dict2={'x':1,'y':2}
 dict2['z']=3
 print(dict2)
 
+# 如果通过键获取值时不希望 KeyError 异常抛出，可以使用 get 方法，若键不存在，则直接返回 None。
+codes = {'beijing': '010', 'shanghai': '021'}
+codes.get('a')
+# 也可以给 get 方法传递第二个参数作为默认值，使得键不存在时直接返回默认值。
+# 值 = 字典.get(键, 默认值)
+codes.get('a', '000')
+
+# 判断字典中是否包含某个键
+# 布尔值 = 键 in 字典
+codes = {'beijing': '010', 'shanghai': '021'}
+'beijing' in codes
+
+# 获取所有键
+codes = {'beijing': '010', 'shanghai': '021'}
+codes.keys()
+
+# 可以用 list() 函数将迭代器转换为列表
+print(list(codes.keys()))
+
+# 获取所有值
+codes = {'beijing': '010', 'shanghai': '021'}
+codes.values()
+print(list(codes.values()))
+
+# 获取所有键值对的列表
+codes = {'beijing': '010', 'shanghai': '021'}
+
+# 获取到的所有键值对是以迭代器的形式存在，我们用 list() 函数将迭代器转换为列表
+print(list(codes.items()))
+
+
 chinese_zodiac = "猴鸡狗猪鼠牛虎兔龙蛇马羊"
 zodiac_name = ('摩羯座','水瓶座','双鱼座','白羊座','金牛座','双子座','巨蟹座','狮子座',
                 '处女座','天秤座','天蝎座','射手座')
