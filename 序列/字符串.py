@@ -20,6 +20,7 @@ string.strip()
 # split：将字符串用某个子串分隔开，分隔后的各个部分放入列表中，并返回这个列表
 string.split(' ')
 
+words=['a','b','c']
 ''.join(words)
 string.upper()
 string.lower()
